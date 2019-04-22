@@ -650,7 +650,7 @@ sub _experimental_bundle {
     my ($version, $obj);
 
     shift->Document->find( sub {
-        return '' unless $_[1]->isa('PPI::Statement::Include') 
+        return '' unless $_[1]->isa('PPI::Statement::Include')
                      and $_[1]->pragma eq 'experimental';
 
         my @child = $_[1]->schildren;
@@ -1452,8 +1452,8 @@ explicit version dependencies.
 
 B<However> it is exceedingly easy to add a new syntax check, so if you
 find something this is missing, copy and paste one of the existing
-5 line checking functions, modify it to find what you want, and report it
-to rt.cpan.org, along with the version needed.
+5 line checking functions, modify it to find what you want, and report it,
+along with the version needed.
 
 I don't even need an entire diff... just the function and version.
 
@@ -1476,15 +1476,27 @@ C<package NAME VERSION;>, C<...>, and C<use feature ':5.12'>)>
 
 =head1 SUPPORT
 
-All bugs should be filed via the CPAN bug tracker at
+Bugs can be filed via the CPAN or GitHub bug trackers:
+
+=over
+
+=item *
 
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Perl-MinimumVersion>
+
+=item *
+
+L<https://github.com/neilb/Perl-MinimumVersion/issues>
+
+=back
 
 For other issues, or commercial enhancement or support, contact the author.
 
 =head1 AUTHORS
 
 Adam Kennedy E<lt>adamk@cpan.orgE<gt>
+
+Neil Bowers E<lt>neil@bowers.comE<gt>
 
 =head1 SEE ALSO
 
@@ -1503,6 +1515,7 @@ L<https://github.com/neilbowers/Perl-MinimumVersion>
 =head1 COPYRIGHT
 
 Copyright 2005 - 2014 Adam Kennedy.
+Copyright 2015 - 2019 Neil Bowers and contributors.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.

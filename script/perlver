@@ -403,9 +403,19 @@ sub dist ($) {
 
 =head1 SUPPORT
 
-All bugs should be filed via the bug tracker at
+Bugs can be filed via the CPAN or GitHub bug trackers:
+
+=over
+
+=item *
 
 L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Perl-MinimumVersion>
+
+=item *
+
+L<https://github.com/neilb/Perl-MinimumVersion/issues>
+
+=back
 
 For other issues, or commercial enhancement and support, contact the author
 
@@ -420,6 +430,7 @@ L<PPI>, L<Perl::MinimumVersion>
 =head1 COPYRIGHT
 
 Copyright 2005 - 2012 Adam Kennedy.
+Copyright 2015 - 2019 Neil Bowers and contributors.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
